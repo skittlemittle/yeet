@@ -9,7 +9,7 @@ fi
 # export SYSTEMD_PAGER=
 
 # I like colors in my life
-export PS1="\e[34;1m[\u@\h \W]\$ \e[m"
+export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$ \[\033[00m\]"
 
 # User specific aliases and functions
 
