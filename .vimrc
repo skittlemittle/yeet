@@ -1,3 +1,6 @@
+"====Keyboard shortcuts=============================================
+map <C-n> :NERDTreeToggle<CR>
+
 "====General trash===================================================
 syntax on
 set showmatch
@@ -13,3 +16,5 @@ set nowrap
 set foldmethod=manual             "code folding
 set completeopt=longest,menuone   "autocomplete menu, shows longest match
 
+"====Vim plug garbage==============================================
+so ~/.vim/plugins.vim
