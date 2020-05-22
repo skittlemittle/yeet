@@ -15,9 +15,9 @@ set number
 
 "====Spacing, Tabbing, Indenting, and Wrapping=======================
 set tabstop=8
-set softtabstop
+set softtabstop=-1
 set shiftwidth=4
-set noexpandtab
+set expandtab
 set autoindent
 set smartindent
 set nowrap
@@ -35,6 +35,7 @@ Plug 'dracula/vim',{'as':'dracula'}
 Plug 'psf/black'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 "====Le theme========================================================
