@@ -31,7 +31,8 @@ set complete=.,w,b,u,t,i          " scan current & included files for autocomple
 "====Vim plug garbage================================================
 call plug#begin()
 
-Plug 'dracula/vim',{'as':'dracula'}
+"Plug 'dracula/vim',{'as':'dracula'}
+Plug 'joshdick/onedark.vim'
 Plug 'psf/black'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
@@ -39,4 +40,4 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 "====Le theme========================================================
-colorscheme dracula
+colorscheme onedark
