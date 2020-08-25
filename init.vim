@@ -37,6 +37,7 @@ Plug 'psf/black'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'thaerkh/vim-indentguides'
 
 call plug#end()
 "====Le theme========================================================
