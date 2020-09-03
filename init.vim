@@ -58,3 +58,6 @@ if (empty($TMUX))
 endif
 
 colorscheme onedark
+
+"====misc stuff eh========================================================
+autocmd FileType c,cpp setlocal equalprg=clang-format
