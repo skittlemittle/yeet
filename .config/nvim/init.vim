@@ -12,7 +12,10 @@ inoremap { {}<left>
 syntax on
 set showmatch
 set number
+set updatetime=300
 autocmd FileType c,cpp setlocal equalprg=clang-format
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
 "====Spacing, Tabbing, Indenting, and Wrapping=======================
 set tabstop=8
@@ -34,13 +37,13 @@ call plug#begin()
 
 "Plug 'dracula/vim',{'as':'dracula'}
 Plug 'joshdick/onedark.vim'
-Plug 'psf/black'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'thaerkh/vim-indentguides'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 "====Le theme========================================================
