@@ -1,4 +1,5 @@
 # .bashrc
+#where are ur  fucking alias vim? - Fark 
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
