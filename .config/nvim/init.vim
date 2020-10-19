@@ -12,6 +12,10 @@ inoremap { {}<left>
 syntax on
 set showmatch
 set number
+set termguicolors
+set mouse=a
+set colorcolumn=81
+set backspace=indent,eol,start
 set updatetime=300
 autocmd FileType c,cpp setlocal equalprg=clang-format
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
@@ -20,7 +24,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR
 "====Spacing, Tabbing, Indenting, and Wrapping=======================
 set tabstop=8
 set softtabstop=-1
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
@@ -46,6 +50,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
+
+" nerdtree has no rights
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "====Le theme========================================================
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
