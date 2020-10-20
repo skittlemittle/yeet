@@ -1,0 +1,39 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [80],
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono Fallback'",
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.provider": "black",
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    // Name of the predefined style used as a fallback in case clang-format is invoked with style "file" but the .clang-format file is not found. Possible values are Visual Studio, LLVM, Google, Chromium, Mozilla, WebKit, none, or use {key: value, ...} to set specific parameters. For example, the "Visual Studio" style is similar to: { BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Allman, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4 }
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "workbench.colorTheme": "Tokyo Night",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact" 
+    },
+    "editor.minimap.enabled": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.tabSize": 2,
+    "arduino.additionalUrls": "",
+    "arduino.path": "/home/shaany/Downloads/arduino-1.8.13",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.showStartPage": false,
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.fontLigatures": true
+}
