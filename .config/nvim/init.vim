@@ -39,9 +39,9 @@ set complete=.,w,b,u,t,i          " scan current & included files for autocomple
 "====Vim plug garbage================================================
 call plug#begin()
 
-"Plug 'dracula/vim',{'as':'dracula'}
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-fugitive'
 Plug 'joshdick/onedark.vim'
-Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'thaerkh/vim-indentguides'
@@ -68,5 +68,6 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
-colorscheme onedark
+let g:airline_section_b = '%{FugitiveStatusline()}'
+colorscheme gruvbox
 
