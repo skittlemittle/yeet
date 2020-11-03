@@ -25,15 +25,20 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.tabSize": 2,
-    "arduino.additionalUrls": "",
-    "arduino.path": "/home/shaany/Downloads/arduino-1.8.13",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "python.showStartPage": false,
     "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        "<C-d>": false,
+        "<C-]>": false,
+        "<C-[>": false,
+        "<C-f>": false,
+    }
 }
