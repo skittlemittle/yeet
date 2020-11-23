@@ -21,6 +21,7 @@ autocmd FileType c,cpp setlocal equalprg=clang-format
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
+let g:rustfmt_autosave = 1
 "====Spacing, Tabbing, Indenting, and Wrapping=======================
 set tabstop=8
 set softtabstop=-1
@@ -33,8 +34,8 @@ set nowrap
 "====Dialoges, Prompts, Folding, and Menus===========================
 set foldmethod=manual             "code folding
 set confirm
-set completeopt=longest,menuone   "autocomplete menu, shows longest match
-set complete=.,w,b,u,t,i          " scan current & included files for autocomplete
+"set completeopt=longest,menuone   "autocomplete menu, shows longest match
+"set complete=.,w,b,u,t,i          " scan current & included files for autocomplete
 
 "====Vim plug garbage================================================
 call plug#begin()
@@ -48,6 +49,7 @@ Plug 'thaerkh/vim-indentguides'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
@@ -69,5 +71,8 @@ if (has("termguicolors"))
 endif
 
 let g:airline_section_b = '%{FugitiveStatusline()}'
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+
 colorscheme gruvbox
 

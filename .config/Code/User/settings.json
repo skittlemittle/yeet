@@ -21,6 +21,7 @@
         "javascript": "javascriptreact" 
     },
     "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -40,5 +41,8 @@
         "<C-]>": false,
         "<C-[>": false,
         "<C-f>": false,
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
