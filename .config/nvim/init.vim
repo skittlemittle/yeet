@@ -34,8 +34,6 @@ set nowrap
 "====Dialoges, Prompts, Folding, and Menus===========================
 set foldmethod=manual             "code folding
 set confirm
-"set completeopt=longest,menuone   "autocomplete menu, shows longest match
-"set complete=.,w,b,u,t,i          " scan current & included files for autocomplete
 
 "====Vim plug garbage================================================
 call plug#begin()
@@ -55,6 +53,13 @@ call plug#end()
 
 " nerdtree has no rights
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" coc haha
+let g:coc_global_extensions = [
+  \ 'coc-json',
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ ]
 "====Le theme========================================================
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
