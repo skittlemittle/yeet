@@ -11,3 +11,15 @@ vim.opt.relativenumber = true
 -- this + setting esc time to 0 in tmux fixes it
 vim.opt.timeoutlen = 1000
 vim.opt.ttimeoutlen = 0
+
+vim.api.nvim_create_augroup("lvim_user", {})
+lvim.autocommands = {
+  {
+    {"BufEnter", "BufWinEnter"},
+    {
+      group = "lvim_user",
+      pattern = "*.sml",
+      command = "setlocal ts=4 sw=4",
+    },
+  },
+}
